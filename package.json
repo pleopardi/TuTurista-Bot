@@ -1,0 +1,27 @@
+{
+  "name": "tuturista",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run webhook\"",
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "webhook": "lt -p 3000 -s tuturistabot"
+  },
+  "engines": {
+    "node": "8.2.1"
+  },
+  "author": "Paolo Leopardi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "eslint": "^4.5.0",
+    "eslint-plugin-node": "^5.1.1",
+    "nodemon": "^1.11.0"
+  }
+}
